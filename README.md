@@ -1,4 +1,4 @@
-# Powershell Test Runner 
+# Exercism Test Runner Template
 
 This repository is a [template repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-template-repository) for creating [test runners][test-runners] for [Exercism][exercism] tracks.
 
