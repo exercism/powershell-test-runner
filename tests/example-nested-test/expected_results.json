@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "status": "succes",
+  "tests": [
+    {
+      "name": "zero steps for one",
+      "status": "success"
+    },
+    {
+      "name": "divide if even",
+      "status": "success"
+    },
+    {
+      "name": "even and odd steps",
+      "status": "success"
+    },
+    {
+      "name": "large number of even and odd steps",
+      "status": "success"
+    },
+    {
+      "name": "zero is an error",
+      "status": "success"
+    },
+    {
+      "name": "negative value is an error",
+      "status": "success"
+    }
+  ]
+}

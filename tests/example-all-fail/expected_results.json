@@ -1,5 +1,16 @@
 {
-  "version": 1,
+  "version": 2,
   "status": "fail",
-  "message": "TODO: replace with correct output"
+  "tests": [
+    {
+      "name": "stating something",
+      "status": "fail",
+      "message": "Message: Expected strings to be the same, but they were different.\nString lengths are both 9.\nStrings differ at index 6.\nExpected: 'Whatever.'\nBut was:  'Whatevah.'\n           ------^\n\nStack-trace: at hey -HeyBob \"Tom-ay-to, tom-aaaah-to.\" | Should -BeExactly \"Whatever.\", /workspaces/powershell-test-runner/tests/example-all-fail/MiniBob.test.ps1:8\nat <ScriptBlock>, /workspaces/powershell-test-runner/tests/example-all-fail/MiniBob.test.ps1:8"
+    },
+    {
+      "name": "shouting",
+      "status": "fail",
+      "message": "Message: Expected strings to be the same, but they were different.\nExpected length: 16\nActual length:   9\nStrings differ at index 2.\nExpected: 'Whoa, chill out!'\nBut was:  'Whatevah.'\n           --^\n\nStack-trace: at hey -HeyBob \"WATCH OUT!\" | Should -BeExactly \"Whoa, chill out!\", /workspaces/powershell-test-runner/tests/example-all-fail/MiniBob.test.ps1:12\nat <ScriptBlock>, /workspaces/powershell-test-runner/tests/example-all-fail/MiniBob.test.ps1:12"
+    }
+  ]
 }
