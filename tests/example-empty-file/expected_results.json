@@ -1,5 +1,16 @@
 {
-  "version": 1,
+  "version": 2,
   "status": "fail",
-  "message": "TODO: replace with correct output"
+  "tests": [
+    {
+      "name": "stating something",
+      "status": "fail",
+      "message": "Message: CommandNotFoundException: The term 'hey' is not recognized as a name of a cmdlet, function, script file, or executable program.\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.\n\nStack-trace: at <ScriptBlock>, /workspaces/powershell-test-runner/tests/example-empty-file/MiniBob.test.ps1:8"
+    },
+    {
+      "name": "shouting",
+      "status": "fail",
+      "message": "Message: CommandNotFoundException: The term 'hey' is not recognized as a name of a cmdlet, function, script file, or executable program.\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.\n\nStack-trace: at <ScriptBlock>, /workspaces/powershell-test-runner/tests/example-empty-file/MiniBob.test.ps1:12"
+    }
+  ]
 }

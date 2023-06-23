@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="6" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2023-06-23" time="07:55:22">
+  <environment platform="Linux" machine-name="codespaces-e6a1ab" cwd="/workspaces/powershell-test-runner/tests/example-nested-test" clr-version="Unknown" user-domain="" nunit-version="2.5.8.0" user="codespace" os-version="5.15.0-1040-azure" />
+  <culture-info current-culture="" current-uiculture="" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Success" success="True" time="0.9074" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="/workspaces/powershell-test-runner/tests/example-nested-test/CollatzConjecture.tests.ps1" executed="True" result="Success" success="True" time="0.9074" asserts="0" description="/workspaces/powershell-test-runner/tests/example-nested-test/CollatzConjecture.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Test Invoke-CollatzConjecture.ps1" executed="True" result="Success" success="True" time="0.3113" asserts="0" description="Test Invoke-CollatzConjecture.ps1">
+            <results>
+              <test-suite type="TestFixture" name="Test Invoke-CollatzConjecture.ps1.Passing Tests" executed="True" result="Success" success="True" time="0.2358" asserts="0" description="Test Invoke-CollatzConjecture.ps1.Passing Tests">
+                <results>
+                  <test-case description="zero steps for one" name="Test Invoke-CollatzConjecture.ps1.Passing Tests.zero steps for one" time="0.1407" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="divide if even" name="Test Invoke-CollatzConjecture.ps1.Passing Tests.divide if even" time="0.0087" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="even and odd steps" name="Test Invoke-CollatzConjecture.ps1.Passing Tests.even and odd steps" time="0.0087" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="large number of even and odd steps" name="Test Invoke-CollatzConjecture.ps1.Passing Tests.large number of even and odd steps" time="0.0179" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Test Invoke-CollatzConjecture.ps1.Failing Tests" executed="True" result="Success" success="True" time="0.2942" asserts="0" description="Test Invoke-CollatzConjecture.ps1.Failing Tests">
+                <results>
+                  <test-case description="zero is an error" name="Test Invoke-CollatzConjecture.ps1.Failing Tests.zero is an error" time="0.0446" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="negative value is an error" name="Test Invoke-CollatzConjecture.ps1.Failing Tests.negative value is an error" time="0.0078" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

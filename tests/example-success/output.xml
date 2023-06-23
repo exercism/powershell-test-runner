@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="2" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2023-06-23" time="07:55:37">
+  <environment nunit-version="2.5.8.0" platform="Linux" machine-name="codespaces-e6a1ab" user="codespace" cwd="/workspaces/powershell-test-runner/tests/example-success" user-domain="" os-version="5.15.0-1040-azure" clr-version="Unknown" />
+  <culture-info current-culture="" current-uiculture="" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Success" success="True" time="0.733" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="/workspaces/powershell-test-runner/tests/example-success/MiniBob.test.ps1" executed="True" result="Success" success="True" time="0.733" asserts="0" description="/workspaces/powershell-test-runner/tests/example-success/MiniBob.test.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Test Get-BobResponse" executed="True" result="Success" success="True" time="0.2452" asserts="0" description="Test Get-BobResponse">
+            <results>
+              <test-case description="stating something" name="Test Get-BobResponse.stating something" time="0.1694" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="shouting" name="Test Get-BobResponse.shouting" time="0.0179" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
