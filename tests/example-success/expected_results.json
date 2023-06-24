@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "status": "succes",
+  "status": "success",
   "tests": [
     {
       "name": "stating something",

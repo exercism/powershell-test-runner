@@ -31,7 +31,7 @@ Select-Xml -Path $arg1 -XPath "//test-case" | ForEach-Object {
 
 $test = [ordered]@{
     version = 2
-    status = "succes"
+    status = "success"
     tests = $testlist
 }
 
