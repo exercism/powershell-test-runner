@@ -14,24 +14,24 @@ cd $arg2
 
 Invoke-Pester -Configuration $PesterConfig 
 
-$testlist = [System.Collections.ArrayList]::new()
+$testlist = @()
 
 Select-Xml -Path $arg1 -XPath "//test-case" | ForEach-Object {
     $test = [ordered]@{ 
         name = $_.Node.description
-        status = "success"
+        status = "pass"
     }
     if ($_.Node.result -eq "Failure"){
         $test.status = "fail"
         $test.message = "Message: " + $_.Node.failure.message + "`n`nStack-trace: " + $_.Node.failure.'stack-trace'
     }
 
-    $testlist.Add($test)
+    $testlist += $test
 }
 
 $test = [ordered]@{
     version = 2
-    status = "success"
+    status = "pass"
     tests = $testlist
 }
 
