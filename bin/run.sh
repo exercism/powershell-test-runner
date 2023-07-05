@@ -22,23 +22,17 @@ if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then
 fi
 
 slug="$1"
-solution_dir=$(realpath "${2%/}")
-output_dir=$(realpath "${3%/}")
+input_dir="${2%/}"
+output_dir="${3%/}"
 results_file="${output_dir}/results.json"
-capture_file="${output_dir}/capture"
 junit_file="${output_dir}/output.xml"
-test="${solution_dir}/$(jq -r '.files.test[0]' ${solution_dir}/.meta/config.json)"
+test="${input_dir}/$(jq -r '.files.test[0]' ${input_dir}/.meta/config.json)"
 
 # Create the output directory if it doesn't exist
 mkdir -p "${output_dir}"
 
 echo "${slug}: testing..."
 
-pwsh -File "./bin/run.ps1" "${junit_file}" "${solution_dir}" "${test}"
-pwsh -File "./bin/result.ps1" "${junit_file}"
-
-
-#./bin/scaffold_json "${spec_file}" "${scaffold_file}"
-#./bin/result_to_json "${capture_file}" "${junit_file}" "${scaffold_file}" "${results_file}"
+pwsh -File "./bin/run.ps1" "${junit_file}" "${input_dir}" "${test}" "${results_file}"
 
 echo "${slug}: done"

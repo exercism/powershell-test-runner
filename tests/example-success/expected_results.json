@@ -1,4 +1,14 @@
 {
-  "version": 1,
-  "status": "pass"
+  "version": 2,
+  "status": "pass",
+  "tests": [
+    {
+      "name": "stating something",
+      "status": "pass"
+    },
+    {
+      "name": "shouting",
+      "status": "pass"
+    }
+  ]
 }

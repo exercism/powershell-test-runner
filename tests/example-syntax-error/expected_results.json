@@ -1,5 +1,16 @@
 {
-  "version": 1,
-  "status": "error",
-  "message": "TODO: replace with correct output"
+  "version": 2,
+  "status": "fail",
+  "tests": [
+    {
+      "name": "stating something",
+      "status": "fail",
+      "message": "Message: CommandNotFoundException: The term 'eturn' is not recognized as a name of a cmdlet, function, script file, or executable program.\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.\n\nStack-trace: at hey, /opt/test-runner/tests/example-syntax-error/MiniBob.ps1:33\nat <ScriptBlock>, /opt/test-runner/tests/example-syntax-error/MiniBob.test.ps1:8"
+    },
+    {
+      "name": "shouting",
+      "status": "fail",
+      "message": "Message: CommandNotFoundException: The term 'eturn' is not recognized as a name of a cmdlet, function, script file, or executable program.\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.\n\nStack-trace: at hey, /opt/test-runner/tests/example-syntax-error/MiniBob.ps1:31\nat <ScriptBlock>, /opt/test-runner/tests/example-syntax-error/MiniBob.test.ps1:12"
+    }
+  ]
 }
