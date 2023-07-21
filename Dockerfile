@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/powershell:7.3-alpine-3.14
+FROM mcr.microsoft.com/powershell:7.3-alpine-3.17
 
 # install packages required to run the tests
 RUN apk add --no-cache jq coreutils
